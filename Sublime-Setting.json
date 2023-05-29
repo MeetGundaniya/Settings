@@ -1,0 +1,54 @@
+{
+	"font_size": 13,
+	"font_face": "Source Code Pro",
+	"tab_size": 2,
+	"save_on_focus_lost": true,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false,
+	"close_windows_when_empty": true,
+
+	// "line_padding_top": 1,
+	// "line_padding_bottom": 1,
+
+	"font_options": ["gdi"],
+	"theme_font_options": ["gdi"],
+
+	"detect_indentation": false,
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+  "minimap_horizontal_scrolling": true,
+
+	"highlight_line": false,
+ 	"caret_style": "smooth",
+ 	"draw_white_space": ["selection", "trailing", "isolated", "mixed"],
+
+	"indent_guide_options": [
+		"draw_normal",
+		"draw_active",
+		"draw_active_single",
+	],
+
+	"trim_trailing_white_space_on_save": "not_on_caret",
+	"ensure_newline_at_eof_on_save": true,
+
+	"auto_complete_cycle": true,
+
+	
+	"bold_folder_labels": true,
+
+	"hide_new_tab_button": true,
+
+	"ignored_packages": [
+		"Status Bar JsonPath",
+		"Vintage",
+	],
+
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Monokai.sublime-color-scheme",
+
+  "always_prompt_for_file_reload": true,
+
+
+
+
+}
