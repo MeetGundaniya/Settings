@@ -1,0 +1,187 @@
+{
+  /////////////////////////////////////////////////////////////////////////////////////////////////// editor
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.fontFamily": "Source Code Pro",
+  "editor.wordWrap": "off",
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "smooth",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "ritwickdey.live-sass"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    },
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true,
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false,
+  },
+  "editor.guides.bracketPairs": "active",
+  "editor.detectIndentation": false,
+  "editor.hover.delay": 600,
+  // "editor.hover.enabled": false,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.pptx": "default",
+    "*.py": "default",
+    "git-rebase-todo": "gitlens.rebase",
+    "*.log": "default"
+  },
+  "workbench.colorCustomizations": {
+    "[Default Dark+]": {
+      "editor.background": "#202020",
+      "sideBar.background": "#191919",
+      "activityBar.background": "#252525",
+      "statusBar.background": "#323232",
+      "statusBar.noFolderBackground": "#323232",
+    },
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// features
+  "search.quickOpen.includeHistory": false,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// zenMode
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// vscode general
+  "debug.console.fontSize": 16,
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "window.closeWhenEmpty": true,
+  "testing.automaticallyOpenPeekView": "never",
+  "problems.decorations.enabled": false,
+  "css.hover.references": false,
+  "explorer.decorations.badges": false,
+  "emmet.includeLanguages": {
+    "scss": "css",
+    "sass": "css",
+    "django-html": "html"
+  },
+  /////////////////////////////////////////////////////////////////////////////////////////////////// python
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.completeFunctionParens": true,
+  "python.venvPath": "${env:USERPROFILE}\\Envs",
+  "python.defaultInterpreterPath": "${env:USERPROFILE}\\Envs\\pyVSCode\\Scripts\\python.exe",
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black", // "none", // replace the black formatting functionality of the Python extension by ms-python.black-formatter
+  "python.formatting.blackPath": "cblack",
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--rcfile",
+    "${env:USERPROFILE}\\.vscode\\configs\\.pylintrc"
+  ],
+  // "python.sortImports.args": [
+  //   "--settings-file",
+  //   "${env:USERPROFILE}\\.vscode\\configs"
+  // ],
+  // "isort.args": [
+  //   "--settings-file",
+  //   "${env:USERPROFILE}\\.vscode\\configs"
+  // ],
+  "python.formatting.blackArgs": [
+    "--config",
+    "${env:USERPROFILE}\\.vscode\\configs\\black.toml"
+    // "--skip-string-normalization",
+    // "--target-version",
+    // "py310"
+  ],
+  "python.logging.level": "warn",
+  // "python.linting.mypyCategorySeverity.error": "Hint",
+  // "python.linting.pylintCategorySeverity.error": "Hint",
+  // "python.linting.pylintCategorySeverity.fatal": "Warning",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// jupyter notebook
+  "interactiveWindow.alwaysScrollOnNewCell": true,
+  // "jupyter.alwaysScrollOnNewCell": true,
+  "notebook.lineNumbers": "on",
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.showCellStatusBar": "visibleAfterExecute",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "jupyter.enableExtendedKernelCompletions": true,
+  "jupyter.generateSVGPlots": true,
+  "jupyter.pythonCompletionTriggerCharacters": ".%'\" ()[]{}",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// kite
+  "kite.codefinder.enableLineDecoration": false,
+  "kite.startKiteEngineOnStartup": false,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// code-runner
+  "code-runner.executorMap": {
+    //  Add "extensionDependencies": ["ms-python.python"],
+    //  after "devDependencies": {...},
+    //  at file -> \.vscode\extensions\formulahendry.code-runner-0.11.8\package.json 
+    "python": "\"$pythonPath\" -u $fullFileName"
+  },
+  "code-runner.showExecutionMessage": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// git
+  "git.decorations.enabled": false,
+  "git.autofetch": true,
+  "gitlens.showWelcomeOnInstall": false,
+  /////////////////////////////////////////////////////////////////////////////////////////////////// material-icon-theme
+  "material-icon-theme.folders.theme": "specific",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// colorize
+  "colorize.hide_current_line_decorations": false,
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "svg"
+  ],
+  /////////////////////////////////////////////////////////////////////////////////////////////////// liveshare
+  "liveshare.showInStatusBar": "whileCollaborating",
+  "liveServer.settings.NoBrowser": true,
+  // "liveServer.settings.donotShowInfoMsg": true,
+  // "liveServer.settings.proxy": {
+  //     "baseUri": ""
+  // },
+  // "liveServer.settings.fullReload": true,
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  /////////////////////////////////////////////////////////////////////////////////////////////////// others
+  // "extensions.experimental.affinity": {
+  //   "ms-toolsai.jupyter": 1,
+  //   "ms-toolsai.jupyter-renderers": 1,
+  //   "ms-python.python": 1,
+  //   "ms-python.vscode-pylance": 1
+  // },
+  "": "",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.mergeEditor": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressRebaseSwitchToTextWarning": true
+  },
+  "search.useIgnoreFiles": false,
+}
